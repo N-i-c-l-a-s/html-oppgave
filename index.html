@@ -1,112 +1,144 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Menu</title>
-    <script src="https://kit.fontawesome.com/90e0104a54.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">   
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="menu-icon" id="open-menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </div>                                            
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#mine-verktøy"><i class="fas fa-tools"></i> Mine verktøy</a></li>
-                <li><a href="#om-meg"><i class="fas fa-user"></i> Om meg</a></li>
-                <li><a href="#mine-prosjekter"><i class="fas fa-folder-open"></i> Mine prosjekter</a></li>
-                <li class="menu-icon" id="close-menu" style="display: none;">
-                    <i class="fas fa-times"></i>
-                </li>
-            </ul>
-        </nav>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navigation Menu</title>
+        <script src="https://kit.fontawesome.com/90e0104a54.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="menu-icon" id="open-menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </div>                                            
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#mine-verktoy"><i class="fas fa-tools"></i> Mine verktøy</a></li>
+                    <li><a href="#om-meg"><i class="fas fa-user"></i> Om meg</a></li>
+                    <li><a href="#mine-prosjekter"><i class="fas fa-folder-open"></i> Mine prosjekter</a></li>
+                    <li class="menu-icon" id="close-menu" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </li>
+                </ul>
+            </nav>
 
-        <div class="sections">
-            <section id="mine-verktøy">
-                <h1>Mine verktøy</h1>
-                <p>Her er en liste over mine verktøy...</p>
-            </section>
-            
-            <section id="om-meg">
-                <h1>Om meg</h1>
-                <p>Her er litt informasjon om meg...</p>
-            </section>
-            
-            <section id="mine-prosjekter">
-                <h1>Mine prosjekter</h1>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="Images/Skjermbilde 2025-02-02 132225.png" alt="Project 1">
-                        <div class="project-info">
-                            <h2>Phishing og cybersikkerhet</h2>
-                            <p>Introduction till phishing.</p>
-                            <a href="https://buskerudfylke-my.sharepoint.com/:p:/g/personal/niclassi_bfk_no/EYyLQZDgKLtIvjgBuw-qdHEB_P1Ni0YeC8aaCIUe-SxAeQ?e=ZWgDqI">Les mer</a>
+            <div class="sections">
+                <section id="mine-verktoy">
+                    <h1>Mine Verktøy</h1>
+                    <div class="tools-grid">
+                      <!-- Python -->
+                      <div class="tool-card">
+                        <img src="Images/logo.png" alt="Python">
+                        <div class="tool-info">
+                          <h2>Python</h2>
+                          <p>Jeg bruker Python for programmering og dataanalyse.</p>
+                        </div>
+                      </div>
+                  
+                      <!-- HTML -->
+                      <div class="tool-card">
+                        <img src="Images/png-clipart-responsive-web-design-html-world-wide-web-consortium-world-wide-web-angle-text-thumbnail.png" alt="HTML">
+                        <div class="tool-info">
+                          <h2>HTML</h2>
+                          <p>HTML er grunnlaget for all webutvikling.</p>
+                        </div>
+                      </div>
+                  
+                      <!-- CSS -->
+                      <div class="tool-card">
+                        <img src="Images/CSS3_logo_and_wordmark.svg.png" alt="CSS">
+                        <div class="tool-info">
+                          <h2>CSS</h2>
+                          <p>CSS gir stil og design til nettsidene mine.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                
+                <section id="om-meg">
+                    <h1>Om meg</h1>
+                    <div class="about-text">
+                        <p>Hei! Jeg heter Niclas, og jeg brenner for teknologi og webutvikling. Med en nysgjerrig tilnærming liker jeg å utforske nye verktøy og løsninger for å skape funksjonelle og stilrene nettsider.</p>
+                        <p>Jeg har erfaring med HTML, CSS og python, og jeg jobber stadig med å forbedre ferdighetene mine gjennom nye prosjekter. Når jeg ikke koder, interesserer jeg meg for cybersikkerhet og teknologitrender.</p>
+                        <p>Ta gjerne en titt på prosjektene mine for å se hva jeg har jobbet med!</p>
+                    </div>
+                </section>
+                
+                <section id="mine-prosjekter">
+                    <h1>Mine prosjekter</h1>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <img src="Images/Skjermbilde 2025-02-02 132225.png" alt="Project 1">
+                            <div class="project-info">
+                                <h2>Phishing og cybersikkerhet</h2>
+                                <p>Introduction til phishing.</p>
+                                <a href="https://buskerudfylke-my.sharepoint.com/:p:/g/personal/niclassi_bfk_no/EYyLQZDgKLtIvjgBuw-qdHEB_P1Ni0YeC8aaCIUe-SxAeQ?e=ZWgDqI">Les mer</a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="Images/Flubot.png" alt="Project 2">
+                            <div class="project-info">
+                                <h2>rapport Flubot</h2>
+                                <p>powerpoint presentasjon om flubot.</p>
+                                <a href="https://buskerudfylke-my.sharepoint.com/:p:/g/personal/niclassi_bfk_no/EYGrWEjQZDZOsD9o1I6ccA0Bp9zQHIt8QqXT-cqSFq-lBg?e=dROv5Y">les mer</a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="Images/Github-uke36.png" alt="Project 3">
+                            <div class="project-info">
+                                <h2>En av mine første hmtl prosjekter</h2>
+                                <p>Uke 36 tml oppgave.</p>
+                                <a href="https://github.com/N-i-c-l-a-s/uke36">les mer</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-card">
-                        <img src="" alt="Project 2">
-                        <div class="project-info">
-                            <h2>Project Title 2</h2>
-                            <p>Short description for project 2.</p>
-                            <a href="https://buskerudfylke-my.sharepoint.com/:p:/g/personal/niclassi_bfk_no/EYGrWEjQZDZOsD9o1I6ccA0Bp9zQHIt8QqXT-cqSFq-lBg?e=dROv5Y">les mer</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="project3.jpg" alt="Project 3">
-                        <div class="project-info">
-                            <h2>Project Title 3</h2>
-                            <p>Short description for project 3.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </header>
+                </section>
+            </div>
+        </header>
 
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="circle">
-            <img src="Images/DSC_0764.png" alt="Profile Image">
-        </div>
-        <div class="white-square">
-            <h1>Niclas portefølje</h1>
-            <p>Velkommen til min portefølje! Her finner du informasjon om mine prosjekter og ferdigheter.</p>
-        </div>
-    </section>
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="circle">
+                <img src="Images/DSC_0764.png" alt="Profile Image">
+            </div>
+            <div class="white-square">
+                <h1>Niclas portefølje</h1>
+                <p>Velkommen til min portefølje! Her finner du informasjon om mine prosjekter og ferdigheter.</p>
+            </div>
+        </section>
 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const navLinks = document.querySelectorAll(".nav-menu a");
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-menu a");
 
-        navLinks.forEach(link => {
-            link.addEventListener("click", function (event) {
-                event.preventDefault();
-                const targetId = this.getAttribute("href").substring(1);
-                const targetElement = document.getElementById(targetId);
+            navLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetElement = document.getElementById(targetId);
 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 50,
-                        behavior: "smooth"
-                    });
-                }
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 50,
+                            behavior: "smooth"
+                        });
+                    }
+                });
             });
         });
-    });
 
-    document.getElementById('open-menu').addEventListener('click', function() {
-        document.getElementById('nav-menu').classList.add('active');
-        document.getElementById('open-menu').style.display = 'none';
-        document.getElementById('close-menu').style.display = 'block';
-    });
+        document.getElementById('open-menu').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.add('active');
+            document.getElementById('open-menu').style.display = 'none';
+            document.getElementById('close-menu').style.display = 'block';
+        });
 
-    document.getElementById('close-menu').addEventListener('click', function() {
-        document.getElementById('nav-menu').classList.remove('active');
-        document.getElementById('open-menu').style.display = 'block';
-        document.getElementById('close-menu').style.display = 'none';
-    });
-    </script>
-</body>
-</html>
+        document.getElementById('close-menu').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.remove('active');
+            document.getElementById('open-menu').style.display = 'block';
+            document.getElementById('close-menu').style.display = 'none';
+        });
+        </script>
+    </body>
+    </html>
